@@ -1,0 +1,269 @@
+/* ========== Fonts ========== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Saira:wght@700&display=swap");
+
+/* ========== Variables ========== */
+:root {
+  --primary-color: #38bdf8;
+  --secondary-color: #6366f1;
+  --text-light: #ffffffd9;
+  --gray: #4a4a4d;
+  --bg-dark: #0f0f0f;
+}
+
+/* ========== Reset ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Saira", sans-serif;
+}
+
+/* ========== Home Container ========== */
+.Home {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--bg-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* ========== Hero Section ========== */
+.hero {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* ========== Left Content ========== */
+.hero .left {
+  max-width: 550px;
+}
+
+.hero .left h1 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.hero .left h1 span {
+  font-size: 56px;
+  color: var(--primary-color);
+  letter-spacing: 1.2px;
+}
+
+.hero .left p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 35px;
+  color: var(--text-light);
+}
+
+/* ========== CV Button ========== */
+.cv-btn {
+  position: relative;
+  display: inline-block;
+  padding: 12px 35px;
+  margin-top: 18px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 1;
+  transition: 0.3s ease;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+}
+
+.cv-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 20px rgba(56, 189, 248, 0.4);
+}
+
+.cv-btn .gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+.cv-btn:hover .gradient {
+  opacity: 1;
+}
+
+.cv-btn .label {
+  position: relative;
+  z-index: 3;
+}
+
+/* ========== Job Title ========== */
+.job {
+  font-size: 22px;
+  font-weight: 600;
+  color: #3375b3e7;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.job::after {
+  content: "|";
+  animation: typing 2s infinite;
+  margin-left: 5px;
+}
+
+/* ========== Typing Animation ========== */
+@keyframes typing {
+  0% {
+    content: " D|";
+  }
+  7% {
+    content: " De|";
+  }
+  14% {
+    content: " Dev|";
+  }
+  21% {
+    content: " Deve|";
+  }
+  28% {
+    content: " Devel|";
+  }
+  35% {
+    content: " Develo|";
+  }
+  42% {
+    content: " Develop|";
+  }
+  49% {
+    content: " Developer|";
+  }
+  56% {
+    content: " Develop|";
+  }
+  63% {
+    content: " Develo|";
+  }
+  70% {
+    content: " Devel|";
+  }
+  77% {
+    content: " Deve|";
+  }
+  84% {
+    content: " Dev|";
+  }
+  91% {
+    content: " De|";
+  }
+  98% {
+    content: " D|";
+  }
+  100% {
+    content: " |";
+  }
+}
+
+/* ========== Social Icons ========== */
+.social {
+  margin: 3.5rem 0;
+  display: flex;
+  gap: 14px;
+}
+
+.social a i {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  background-color: #4a4a4d;
+  color: #fff;
+  border-radius: 50%;
+  transition: all 0.35s ease;
+}
+
+.social a i:hover {
+  transform: scale(1.15);
+  background-color: var(--primary-color);
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.6);
+}
+
+/* ========== Hire Button ========== */
+.hire-btn {
+  position: relative;
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--secondary-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hire-btn .gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.hire-btn:hover .gradient {
+  opacity: 1;
+}
+
+.hire-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+}
+
+.hire-btn .label {
+  position: relative;
+  z-index: 2;
+}
+
+/* ========== Right Side Image ========== */
+.hero .right .image img {
+  width: 380px;
+  max-width: 100%;
+}
+@media (max-width: 768px) {
+  .hero .right {
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .hero .right .image img {
+    width: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero .right .image img {
+    width: 180px;
+  }
+}
