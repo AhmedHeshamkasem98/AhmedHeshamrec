@@ -9,7 +9,7 @@ function Navbar() {
     <header className="navbar">
       <nav>
         <a href="#home" id="logo">
-          Ahmed <span>Hesham</span>
+          Ahmed <span>ELqassem</span>
         </a>
 
         {/* Burger Icon */}
