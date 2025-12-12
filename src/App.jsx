@@ -1,4 +1,4 @@
-import Home from "./Home";
+import Home from "./home";
 import About from "./about";
 import Skill from "./skill";
 import Nav from "./nav";
