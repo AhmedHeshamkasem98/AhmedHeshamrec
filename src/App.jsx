@@ -1,23 +1,37 @@
+import React from "react";
+import Navbar from "./nav";
 import Home from "./home";
 import About from "./about";
-import Skill from "./skill";
-import Nav from "./nav";
-import Education from "./education";
-import ProjectsSection from "./project";
+import Skills from "./skill";
+import Projects from "./project";
 import Contact from "./contactme";
-import Footer from "./footer";
+
 function App() {
   return (
-    <>
-      <Nav />
-      <Home />
-      <About />
-      <Skill />
-      <Education />
-      <ProjectsSection />
-      <Contact />
-      <Footer />
-    </>
+    <div>
+      <Navbar />
+      <main>
+        <section id="home">
+          <Home />
+        </section>
+
+        <section id="about">
+          <About />
+        </section>
+
+        <section id="skills">
+          <Skills />
+        </section>
+
+        <section id="projects">
+          <Projects />
+        </section>
+
+        <section id="contact">
+          <Contact />
+        </section>
+      </main>
+    </div>
   );
 }
 
