@@ -7,8 +7,9 @@ function Home() {
     <div className="Home">
       <section className="hero">
         <div className="left">
-          <p></p>
+          <p>hi There</p>
           <br></br>
+          
           <h1>
             I'm <span>Ahmed Elqassem</span>
           </h1>
